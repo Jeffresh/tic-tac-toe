@@ -4,11 +4,11 @@ class TicTacToe:
         self.rows = []
 
     def empty_table(self, ):
-        print('---------')
+        print('-' * 9)
         print('| _ _ _ |')
         print('| _ _ _ |')
         print('| _ _ _ |')
-        print('---------')
+        print('-' * 9)
 
     def who_won(self, player):
         return (self.rows[0][0] == player and self.rows[0][1] == player and self.rows[0][2] == player \
@@ -21,8 +21,8 @@ class TicTacToe:
                 or self.rows[0][2] == player and self.rows[1][1] == player and self.rows[2][0] == player)
 
     def initialize_state(self):
-        table = input('Enter cells:')
-        self.rows = [list(table[0:3]), list(table[3:6]), list(table[6:9])]
+        table = list(input('Enter cells:'))
+        self.rows = [[table[i] for i in range(n, n + 3)] for n in (0, 3, 6)]
 
     def user_move(self):
 
@@ -56,10 +56,7 @@ class TicTacToe:
         else:
             print('---------')
             for row in self.rows:
-                print('| ', end='')
-                for c in row:
-                    print(c + ' ', end='')
-                print('|')
+                print('|', *row, '|')
             print('---------')
 
         # if abs(x_number - o_number) > 1 or self.who_won('X') and self.who_won('O'):
