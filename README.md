@@ -18,6 +18,12 @@ Note that in this stage user moves as X, not O. Keep in mind that the first coor
 
 But what if the user enters incorrect coordinates? The user could enter symbols instead of numbers or enter coordinates representing occupied cells. You need to prevent all of that by checking a user's input and catching possible exceptions.
 
+We are at the finish line! But playing alone is not so interesting, is it? Let's combine our successes in past stages and get Tic-Tac-Toe with the ability to play from the beginning (empty field) to the result (win or draw).
+
+Now it is time to make a working game!
+
+In the last stage, make it so you can play a full game with a friend. First one of you moves as X, and then the other one moves as O.
+
 # About
 Everybody remembers this paper-and-pencil game from childhood: Tic-Tac-Toe, also known as Noughts and crosses or Xs and Os. A single mistake usually costs you the game, but thankfully it is simple enough that most players discover the best strategy quickly. Let’s program Tic-Tac-Toe and get playing!
 
