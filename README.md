@@ -130,5 +130,20 @@ Possible states:
 
 If the user input wrong coordinates, the program should keep asking until the user enters coordinate that represents an empty cell on the field and after that output the field with that move. You should output the field only 2 times - before the move and after a legal move.
 
+# Stage 2/5: Easy does it
+
+## Description
+
+Now it is time to make a working game. Let's create our first opponent! In this version of the program, the user will be playing as X, and the "easy" level computer will be playing as O. This will be our first small step to the AI!
+
+Let's make it so that at this level the computer will make random moves. This level will be perfect for those who play this game for the first time! Well, though... You can create a level of difficulty that will always give in and never win the game. You can implement such a level along with "easy" level, if you want, but it will not be tested.
+
+## Objectives
+
+In this stage you should implement the following:
+1. When starting the program, an empty field should be displayed.
+2. The first to start the game should be the user as X. The program should ask the user to enter the cell coordinates.
+3. Next the computer should make its move as O. And so on until someone will win or there will be a draw.
+4. At the very end of the game you need to print the final result of the game.
 
 ### This project is a part of the following track Python Developer on Jetbrains Academy
